@@ -96,7 +96,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://43.204.214.67:9980/mithuntechnologies/#browse/browse:facebook-snapshot:com%2Fmt%2Fmaven-web-application%2F0.0.1-SNAPSHOT</url>
+	      <url>http://43.204.144.34:9980/mithuntechnologies/repository/walmart-snapshot</url>
 	    </repository>
 	    
 	    <snapshotRepository>
