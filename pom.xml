@@ -105,6 +105,9 @@
 	      <url>http://3.7.252.212:8081/mithuntechnologies/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
 	    
+		<username>admin</username>
+		<password>admin123</password>
+		
 	</distributionManagement>
 	
 	<build>
