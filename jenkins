@@ -1,0 +1,5 @@
+node{
+stage('checkoutcode'){
+git branch: 'development', credentialsId: '873b7ced-5058-4c68-a9a7-88b3c9c5aa9a', url: 'https://github.com/veeravallivenki/maven-web-application.git'
+}
+}
