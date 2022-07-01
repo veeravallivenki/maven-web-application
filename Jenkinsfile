@@ -13,10 +13,10 @@ node
    {
        sh "${mavenHome}/bin/mvn clean sonar:sonar"
    }
-  /*
+  
    stage ('uploadArtifactintonexus')
    {
        sh "${mavenHome}/bin/mvn clean deploy"
    }
-   */
+   
 }
