@@ -97,16 +97,14 @@
 	      <id>nexus</id>
 	      <name>Nexus  Releases  Repository</name>
 	      <url>http://52.66.155.155:9980/venki/repository/facebook-release/</url>
-	      <username>admin</username>
-	      <password>venki293</password>
+	     
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Nexus Snapshot  Repository </name>
 	      <url>http://52.66.155.155:9980/venki/repository/facebook-snapshot/</url>
-	      <username>admin</username>
-	      <password>venki293</password>
+	     
 	    </snapshotRepository>
 	   
 		
