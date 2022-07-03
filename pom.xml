@@ -96,7 +96,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Nexus  Releases  Repository</name>
-	      <url>http://65.2.71.154:8081/repository/facebook-release//</url>
+	      <url>http://65.2.71.154:8081/repository/facebook-release/</url>
 	     
 	    </repository>
 	    
