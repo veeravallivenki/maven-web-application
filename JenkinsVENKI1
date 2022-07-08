@@ -37,6 +37,7 @@ options {
                 sh "mvn clean sonar:sonar"
             }
         }
+        /*
         //Upload Artifact Into Nexus server
         stage ('UploadArtifacrIntoNexusServer')
         {
@@ -45,6 +46,7 @@ options {
                 sh "mvn clean deploy"
             }
         }
+        */
         //Deploy App Into Tomcat Server
         stage ('DeployAppIntoTomcatServer')
         {
