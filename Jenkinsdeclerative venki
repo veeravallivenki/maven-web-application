@@ -1,0 +1,52 @@
+pipeline
+{
+    agent any 
+    tools
+    {
+        maven 'maven'
+    }
+    stages
+    {
+        stage('checkcode')
+        {
+            steps
+            {
+           git branch: 'development', credentialsId: '66705063-c62f-44a2-83b7-2161f05a5586', url: 'https://github.com/veeravallivenki/maven-web-application.git'
+
+            }
+        }
+        stage('Build')
+        {
+            steps
+            {
+                sh "mvn clean package"
+            }
+        }
+        stage('sonarqube')
+        {
+            steps
+            {
+                sh "mvn clean sonar:sonar"
+            }
+        }
+        stage('artifactinto nexus')
+        {
+            steps
+            {
+                sh "mvn clean deploy"
+            }
+        }
+        stage('deployinto tocat')
+        {
+            steps
+            {
+                sshagent(['1a902e12-9fb4-4c27-9d76-3fbd0206d897']) 
+                {
+                    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.233.142.172:/opt/apache-tomcat-9.0.65/webapps/ "
+                }
+
+                
+            }
+        }
+    }
+}
